@@ -1,5 +1,4 @@
 version: '3'
-
 services:
   cloudrev-agent:
     image: jialezi/cloudrev
