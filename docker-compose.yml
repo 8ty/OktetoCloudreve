@@ -1,6 +1,6 @@
 version: '3'
 services:
-  cloudrev-agent:
+  cloudreve:
     image: jialezi/cloudrev
     container_name: cloudrev-agent
     stdin_open: true
