@@ -1,15 +1,9 @@
-version: "3"
+version: '3'
+
 services:
-  cloud-reve:
-    image: jialezi/cloudreve
-    container_name: cloud-reve
-    stdin_open: true
-    tty: true
-    restart: always
+  cloudrev-agent:
+    image: jialezi/cloudrev
     ports:
-      - 443:5212
+      - 5212:5212
     volumes:
-      - ./cloudreve/config:/cloudreve/config
-      - ./cloudreve/uploads:/cloudreve/uploads
-      - ./cloudreve/avatar:/cloudreve/avatar
-    privileged: true
+      - /data:/data
