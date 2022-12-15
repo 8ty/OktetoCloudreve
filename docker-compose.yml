@@ -3,7 +3,12 @@ version: '3'
 services:
   cloudrev-agent:
     image: jialezi/cloudrev
+    container_name: cloudrev-agent
+    stdin_open: true
+    tty: true
+    restart: always
     ports:
       - 5212:5212
     volumes:
       - /data:/data
+     privileged: true
