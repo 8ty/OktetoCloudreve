@@ -1,8 +1,8 @@
 version: "3"
 services:
-  cloudreve:
+  cloud-reve:
     image: jialezi/cloudreve
-    container_name: cloudreve
+    container_name: cloud-reve
     stdin_open: true
     tty: true
     restart: always
